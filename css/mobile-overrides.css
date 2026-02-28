@@ -1,0 +1,101 @@
+/* Mobile-only overrides: center button text without affecting desktop */
+@media (max-width: 767px) {
+  #inicio {
+    padding-bottom: 40px !important;
+  }
+
+  .title .btn,
+  .btn,
+  .btn-block,
+  .btn.btn-dark,
+  .btn.btn-info,
+  .btn.btn-warning,
+  .btn.btn-light,
+  .btn.btn-color,
+  .btn.btn-dark-out,
+  .btn.btn-color-out,
+  .btn.btn-round {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  .btn > i,
+  .btn > img,
+  .btn .hc-arrow-round-forward {
+    margin: 0 !important;
+    position: static !important;
+  }
+}
+
+/* Alineación específica para el botón "Nuestros Planes" en móvil */
+@media (max-width: 767px) {
+  a.btn.btn-info.btn-shadow.btn-round[href="#planes"] {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 16px 16px 8px 16px !important; /* extra top padding to move text down */
+    line-height: 1 !important;
+    min-height: 46px !important;
+    gap: 8px !important;
+    transform: translateX(-11px) !important;
+  }
+  a.btn.btn-info.btn-shadow.btn-round[href="#planes"] .hc-arrow-round-forward {
+    margin-left: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    transform: translate(-1px, 1px) !important;
+  }
+
+  a.btn.btn-info.btn-shadow.btn-round[href="#planes"] .hero-btn-text {
+    position: relative;
+    left: 4px;
+  }
+}
+
+/* Oculta redes/telefono en la seccion inicial solo en mobile */
+@media (max-width: 767px) {
+  #inicio #loginModal .contact-item,
+  #inicio #loginModal .contact-link.whatsapp-link,
+  #inicio #loginModal .contact-link.instagram-link,
+  #inicio #loginModal .contact-link.phone-link {
+    display: none !important;
+  }
+
+  #inicio #loginModal .modal-body > div[style*="height: 95px"] {
+    display: none !important;
+  }
+
+  #inicio #loginModal .well {
+    margin-top: 12px !important;
+  }
+
+  #inicio .title .btn > a.btn-block.btn-dark-out[href^="https://web.whatsapp.com/send?phone=5491151370538"] {
+    transform: translateY(-2px) !important;
+  }
+
+  #inicio .title > div:last-child {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    flex-wrap: wrap !important;
+  }
+
+  #inicio .title > div:last-child > .btn {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  #inicio .title > div:last-child > a.btn,
+  #inicio .title > div:last-child > .btn > a.btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 46px !important;
+    min-height: 46px !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    margin: 0 !important;
+  }
+}

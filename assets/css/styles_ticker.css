@@ -1,0 +1,21 @@
+
+
+#wrapper {
+  margin-bottom: 10px; margin-left:-10px; padding-left:10px;
+  width: 100%;
+}
+
+
+
+#ticker_container {
+  font-family:"Montserrat", Arial, Helvetica, sans-serif; 
+	color:#173866 !important; 
+	
+  background: #EAEAEA;
+  padding: 10px;
+  
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  overflow: auto; width:100% !important;
+}

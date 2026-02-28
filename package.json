@@ -1,0 +1,10 @@
+{
+  "name": "plagasoffA-main",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.6",
+    "dotenv": "^17.3.1",
+    "nodemailer": "^6.9.4"
+  }
+}
