@@ -998,6 +998,14 @@ Sábados de 8:00 a 12:00 hs.</span><br>
       });
     });
     // handler for bottom contact form
+    function trackGoogleAdsContactConversion() {
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-16923057502/f8IeCIO7leccEN66xYU_'
+        });
+      }
+    }
+
     $("#btnContacto").click(function (e) {
       e.preventDefault();
       var nombre = $("#contactoNombre").val();
@@ -1019,6 +1027,7 @@ Sábados de 8:00 a 12:00 hs.</span><br>
         cache: false,
         success: function (res) {
           if (res && res.status === 'OK') {
+            trackGoogleAdsContactConversion();
             alert('Mensaje enviado correctamente.');
             $("#contact-form")[0].reset();
           } else {
